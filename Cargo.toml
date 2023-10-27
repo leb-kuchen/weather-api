@@ -1,0 +1,15 @@
+[package]
+name = "weather-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+openssl-sys = "0.9.93"
+reqwest = { version = "0.11.22", features = ["json", "gzip", "deflate"] }
+schemafy_lib = "0.6.0"
+serde = { version = "1.0.190", features = ["derive"] }
+serde_json = "1.0.107"
+tokio = { version = "1.33.0", features = ["full"] }
