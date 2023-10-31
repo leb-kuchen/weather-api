@@ -21,6 +21,6 @@ async fn main() -> anyhow::Result<()> {
     println!("{:#?}", res.headers());
     let weather = res.json::<swagger::Metjsonforecast>().await?;
     println!("{:#?}", weather);
-    // gen_schema();
+    gen_schema();
     Ok(())
 }

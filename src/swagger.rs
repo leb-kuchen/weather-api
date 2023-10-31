@@ -90,20 +90,17 @@ pub struct ForecastTimeStepDataInstant {
 }
 #[derive(Clone, PartialEq, Debug, Deserialize, Serialize)]
 pub struct ForecastTimeStepDataNext12Hours {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub details: Option<ForecastTimePeriod>,
+    pub details: ForecastTimePeriod,
     pub summary: ForecastSummary,
 }
 #[derive(Clone, PartialEq, Debug, Deserialize, Serialize)]
 pub struct ForecastTimeStepDataNext1Hours {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub details: Option<ForecastTimePeriod>,
+    pub details: ForecastTimePeriod,
     pub summary: ForecastSummary,
 }
 #[derive(Clone, PartialEq, Debug, Deserialize, Serialize)]
 pub struct ForecastTimeStepDataNext6Hours {
-    #[serde(skip_serializing_if = "Option::is_none")]
-    pub details: Option<ForecastTimePeriod>,
+    pub details: ForecastTimePeriod,
     pub summary: ForecastSummary,
 }
 #[derive(Clone, PartialEq, Debug, Deserialize, Serialize)]
